@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Fonts
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+
+body {
+	line-height: 1;
+    font-family: 'Roboto Slab', serif;
+    background-color: #f1f1f1;
+}
+
+/* Top of page
+******************/
+
+header {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    background-color: #2e323c;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+.logo-wrap {
+    flex: 1;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+nav {
+    flex: 1;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 10px 0 10px;;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* Main content
+******************/
+
+.main-text {
+    background-color: #91b3bc;
+    padding: 50px 0 50px 0;
+}
+
+.main-text h2 {
+    font-size: 40px;
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+.main-paragraphs {
+    margin: auto;
+    max-width: 500px;
+    
+    
+}
+
+.main-paragraphs p {
+    padding: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.bildetekstwrap {
+    display: flex;
+    margin: 0 150px 0 150px;
+}
+
+.image-wrap, .tekstwrap {
+    flex: 1;
+    max-width: 1000px;
+    padding: 2vw;   
+}
+
+.image-wrap img {
+    max-width: 100%;
+    border: 1px solid black; 
+}
+
+.tekstwrap p{
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 800px){
+    .bildetekstwrap:nth-child(odd){
+        flex-direction: column;
+    margin: 0 10px 0 10px;
+}
+.bildetekstwrap:nth-child(even){
+        flex-direction: column-reverse;
+    margin: 0 10px 0 10px;
+}
+.main-paragraphs{
+    padding: 0 10px;
+
+}
